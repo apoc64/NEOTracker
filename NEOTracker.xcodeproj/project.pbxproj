@@ -25,6 +25,7 @@
 		41FEE66D2381DA9000D0EF8A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E682381C6F7006C65E9 /* DateFormatterExtensions.swift */; };
 		41FEE6732381F3F800D0EF8A /* NEOResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 41FEE6722381F3F800D0EF8A /* NEOResponse.json */; };
 		41FEE6772381F99000D0EF8A /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FEE6762381F99000D0EF8A /* TestCase.swift */; };
+		41FEE67A238204FF00D0EF8A /* ContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FEE679238204FF00D0EF8A /* ContentViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		41FEE6632381D4B700D0EF8A /* MockServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
 		41FEE6722381F3F800D0EF8A /* NEOResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NEOResponse.json; sourceTree = "<group>"; };
 		41FEE6762381F99000D0EF8A /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
+		41FEE679238204FF00D0EF8A /* ContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		41501E512381C628006C65E9 /* NEOTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
+				41FEE678238204DF00D0EF8A /* ViewTests */,
 				41FEE6742381F93C00D0EF8A /* ServiceTests */,
 				41FEE6752381F97100D0EF8A /* Helpers */,
 				41FEE6652381D5EC00D0EF8A /* Responses */,
@@ -197,6 +200,14 @@
 				41FEE6762381F99000D0EF8A /* TestCase.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		41FEE678238204DF00D0EF8A /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				41FEE679238204FF00D0EF8A /* ContentViewTests.swift */,
+			);
+			path = ViewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FEE67A238204FF00D0EF8A /* ContentViewTests.swift in Sources */,
 				41FEE6772381F99000D0EF8A /* TestCase.swift in Sources */,
 				41FEE65C2381D00A00D0EF8A /* NEOServiceTests.swift in Sources */,
 				41FEE66D2381DA9000D0EF8A /* DateFormatterExtensions.swift in Sources */,
