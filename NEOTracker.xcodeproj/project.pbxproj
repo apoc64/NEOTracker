@@ -16,10 +16,10 @@
 		41501E482381C628006C65E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41501E462381C628006C65E9 /* LaunchScreen.storyboard */; };
 		41501E532381C628006C65E9 /* NEOTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E522381C628006C65E9 /* NEOTrackerTests.swift */; };
 		41501E622381C670006C65E9 /* NetwokingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E612381C670006C65E9 /* NetwokingManager.swift */; };
-		41501E652381C6A6006C65E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 41501E642381C6A6006C65E9 /* Alamofire */; };
 		41501E672381C6D3006C65E9 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E662381C6D3006C65E9 /* Logging.swift */; };
 		41501E692381C6F7006C65E9 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E682381C6F7006C65E9 /* DateFormatterExtensions.swift */; };
 		41501E6C2381C75E006C65E9 /* NEOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E6B2381C75E006C65E9 /* NEOService.swift */; };
+		41FEE6552381CCC700D0EF8A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 41FEE6542381CCC700D0EF8A /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41501E652381C6A6006C65E9 /* Alamofire in Frameworks */,
+				41FEE6552381CCC700D0EF8A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 			);
 			name = NEOTracker;
 			packageProductDependencies = (
-				41501E642381C6A6006C65E9 /* Alamofire */,
+				41FEE6542381CCC700D0EF8A /* Alamofire */,
 			);
 			productName = NEOTracker;
 			productReference = 41501E352381C625006C65E9 /* NEOTracker.app */;
@@ -234,7 +234,7 @@
 			);
 			mainGroup = 41501E2C2381C625006C65E9;
 			packageReferences = (
-				41501E632381C6A6006C65E9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				41FEE6532381CCC700D0EF8A /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 41501E362381C625006C65E9 /* Products */;
 			projectDirPath = "";
@@ -539,7 +539,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		41501E632381C6A6006C65E9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		41FEE6532381CCC700D0EF8A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -550,9 +550,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		41501E642381C6A6006C65E9 /* Alamofire */ = {
+		41FEE6542381CCC700D0EF8A /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 41501E632381C6A6006C65E9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 41FEE6532381CCC700D0EF8A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
