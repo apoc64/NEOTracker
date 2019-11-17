@@ -22,8 +22,8 @@ struct ContentView: View {
     
     func fetchNeos() {
         NEO.requestNeos(completion: { (neos, error) in
-            log("\(neos?.neos.count ?? 0) NEOS")
-            guard let neos = neos?.neos else { return }
+            log("\(neos?.count ?? 0) NEOS")
+            guard let neos = neos else { return }
             self.model = neos
         })
     }

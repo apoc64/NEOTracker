@@ -14,12 +14,16 @@
 		41501E422381C628006C65E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41501E412381C628006C65E9 /* Assets.xcassets */; };
 		41501E452381C628006C65E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41501E442381C628006C65E9 /* Preview Assets.xcassets */; };
 		41501E482381C628006C65E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41501E462381C628006C65E9 /* LaunchScreen.storyboard */; };
-		41501E532381C628006C65E9 /* NEOTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E522381C628006C65E9 /* NEOTrackerTests.swift */; };
 		41501E622381C670006C65E9 /* NetwokingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E612381C670006C65E9 /* NetwokingManager.swift */; };
 		41501E672381C6D3006C65E9 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E662381C6D3006C65E9 /* Logging.swift */; };
 		41501E692381C6F7006C65E9 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E682381C6F7006C65E9 /* DateFormatterExtensions.swift */; };
 		41501E6C2381C75E006C65E9 /* NEOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E6B2381C75E006C65E9 /* NEOService.swift */; };
 		41FEE6552381CCC700D0EF8A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 41FEE6542381CCC700D0EF8A /* Alamofire */; };
+		41FEE65C2381D00A00D0EF8A /* NEOServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FEE65B2381D00A00D0EF8A /* NEOServiceSpec.swift */; };
+		41FEE6642381D4B700D0EF8A /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FEE6632381D4B700D0EF8A /* MockServer.swift */; };
+		41FEE66C2381DA7000D0EF8A /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E662381C6D3006C65E9 /* Logging.swift */; };
+		41FEE66D2381DA9000D0EF8A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E682381C6F7006C65E9 /* DateFormatterExtensions.swift */; };
+		41FEE6732381F3F800D0EF8A /* NEOResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 41FEE6722381F3F800D0EF8A /* NEOResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +47,14 @@
 		41501E472381C628006C65E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41501E492381C628006C65E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41501E4E2381C628006C65E9 /* NEOTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEOTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41501E522381C628006C65E9 /* NEOTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEOTrackerTests.swift; sourceTree = "<group>"; };
 		41501E542381C628006C65E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41501E612381C670006C65E9 /* NetwokingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingManager.swift; sourceTree = "<group>"; };
 		41501E662381C6D3006C65E9 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		41501E682381C6F7006C65E9 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		41501E6B2381C75E006C65E9 /* NEOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEOService.swift; sourceTree = "<group>"; };
+		41FEE65B2381D00A00D0EF8A /* NEOServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEOServiceSpec.swift; sourceTree = "<group>"; };
+		41FEE6632381D4B700D0EF8A /* MockServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
+		41FEE6722381F3F800D0EF8A /* NEOResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NEOResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +124,9 @@
 		41501E512381C628006C65E9 /* NEOTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				41501E522381C628006C65E9 /* NEOTrackerTests.swift */,
+				41FEE65B2381D00A00D0EF8A /* NEOServiceSpec.swift */,
+				41FEE6632381D4B700D0EF8A /* MockServer.swift */,
+				41FEE6652381D5EC00D0EF8A /* Responses */,
 				41501E542381C628006C65E9 /* Info.plist */,
 			);
 			path = NEOTrackerTests;
@@ -164,6 +172,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		41FEE6652381D5EC00D0EF8A /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				41FEE6722381F3F800D0EF8A /* NEOResponse.json */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,6 +217,8 @@
 				41501E502381C628006C65E9 /* PBXTargetDependency */,
 			);
 			name = NEOTrackerTests;
+			packageProductDependencies = (
+			);
 			productName = NEOTrackerTests;
 			productReference = 41501E4E2381C628006C65E9 /* NEOTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -261,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FEE6732381F3F800D0EF8A /* NEOResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41501E532381C628006C65E9 /* NEOTrackerTests.swift in Sources */,
+				41FEE65C2381D00A00D0EF8A /* NEOServiceSpec.swift in Sources */,
+				41FEE66D2381DA9000D0EF8A /* DateFormatterExtensions.swift in Sources */,
+				41FEE6642381D4B700D0EF8A /* MockServer.swift in Sources */,
+				41FEE66C2381DA7000D0EF8A /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
