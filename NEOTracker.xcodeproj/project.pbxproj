@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		41501E452381C628006C65E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41501E442381C628006C65E9 /* Preview Assets.xcassets */; };
 		41501E482381C628006C65E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41501E462381C628006C65E9 /* LaunchScreen.storyboard */; };
 		41501E532381C628006C65E9 /* NEOTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E522381C628006C65E9 /* NEOTrackerTests.swift */; };
+		41501E622381C670006C65E9 /* NetwokingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E612381C670006C65E9 /* NetwokingManager.swift */; };
+		41501E652381C6A6006C65E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 41501E642381C6A6006C65E9 /* Alamofire */; };
+		41501E672381C6D3006C65E9 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E662381C6D3006C65E9 /* Logging.swift */; };
+		41501E692381C6F7006C65E9 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E682381C6F7006C65E9 /* DateFormatterExtensions.swift */; };
+		41501E6C2381C75E006C65E9 /* NEOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E6B2381C75E006C65E9 /* NEOService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,10 @@
 		41501E4E2381C628006C65E9 /* NEOTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEOTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41501E522381C628006C65E9 /* NEOTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEOTrackerTests.swift; sourceTree = "<group>"; };
 		41501E542381C628006C65E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41501E612381C670006C65E9 /* NetwokingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingManager.swift; sourceTree = "<group>"; };
+		41501E662381C6D3006C65E9 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		41501E682381C6F7006C65E9 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		41501E6B2381C75E006C65E9 /* NEOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEOService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41501E652381C6A6006C65E9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +91,17 @@
 		41501E372381C625006C65E9 /* NEOTracker */ = {
 			isa = PBXGroup;
 			children = (
-				41501E382381C625006C65E9 /* AppDelegate.swift */,
-				41501E3A2381C625006C65E9 /* SceneDelegate.swift */,
+				41501E602381C659006C65E9 /* Extensions */,
+				41501E5F2381C650006C65E9 /* Helpers */,
+				41501E5D2381C636006C65E9 /* Models */,
+				41501E5E2381C647006C65E9 /* Networking */,
 				41501E3F2381C625006C65E9 /* ContentView.swift */,
+				41501E3A2381C625006C65E9 /* SceneDelegate.swift */,
 				41501E412381C628006C65E9 /* Assets.xcassets */,
 				41501E462381C628006C65E9 /* LaunchScreen.storyboard */,
 				41501E492381C628006C65E9 /* Info.plist */,
 				41501E3C2381C625006C65E9 /* NEOTracker.xcdatamodeld */,
+				41501E382381C625006C65E9 /* AppDelegate.swift */,
 				41501E432381C628006C65E9 /* Preview Content */,
 			);
 			path = NEOTracker;
@@ -110,6 +124,46 @@
 			path = NEOTrackerTests;
 			sourceTree = "<group>";
 		};
+		41501E5D2381C636006C65E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41501E5E2381C647006C65E9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				41501E6A2381C74A006C65E9 /* Services */,
+				41501E612381C670006C65E9 /* NetwokingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		41501E5F2381C650006C65E9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				41501E662381C6D3006C65E9 /* Logging.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		41501E602381C659006C65E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41501E682381C6F7006C65E9 /* DateFormatterExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		41501E6A2381C74A006C65E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				41501E6B2381C75E006C65E9 /* NEOService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +180,9 @@
 			dependencies = (
 			);
 			name = NEOTracker;
+			packageProductDependencies = (
+				41501E642381C6A6006C65E9 /* Alamofire */,
+			);
 			productName = NEOTracker;
 			productReference = 41501E352381C625006C65E9 /* NEOTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 41501E2C2381C625006C65E9;
+			packageReferences = (
+				41501E632381C6A6006C65E9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 41501E362381C625006C65E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -212,9 +272,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				41501E392381C625006C65E9 /* AppDelegate.swift in Sources */,
+				41501E672381C6D3006C65E9 /* Logging.swift in Sources */,
+				41501E622381C670006C65E9 /* NetwokingManager.swift in Sources */,
 				41501E3B2381C625006C65E9 /* SceneDelegate.swift in Sources */,
 				41501E402381C625006C65E9 /* ContentView.swift in Sources */,
 				41501E3E2381C625006C65E9 /* NEOTracker.xcdatamodeld in Sources */,
+				41501E6C2381C75E006C65E9 /* NEOService.swift in Sources */,
+				41501E692381C6F7006C65E9 /* DateFormatterExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +537,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41501E632381C6A6006C65E9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41501E642381C6A6006C65E9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41501E632381C6A6006C65E9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		41501E3C2381C625006C65E9 /* NEOTracker.xcdatamodeld */ = {
